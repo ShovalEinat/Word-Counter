@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background-color: #C6A664;
+    font-size: 25px;
+    font-family:monospace;
+    cursor: default;
+}
+
+#button{
+    border: none;
+    background-color: #C6A664;
+    font-size: 50px;
+    font-family:monospace;
+    cursor: pointer;
+}
+
+#textBox{
+    background-color: #C6A664;
+    font-size: 30px;
+    font-family:monospace;
+}
+
+#lables{
+    font-size: 40px;
+    font-family:monospace;
+
+}
+
+#separator{
+    height: 20px;
+}
+
+#sentenceLabel{
+    height: 2px;
+}
