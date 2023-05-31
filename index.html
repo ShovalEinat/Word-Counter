@@ -17,7 +17,10 @@
         <div id="sentenceLabel" id="sentences">Sentences : 0</div>
     </div>
     <h1 id="separator">--------</h1>
-    <button id="button" onClick="startCount()">Start</button>
+    <div id="buttons">
+        <button id="paste" title="Pastes from clipboard" onClick="pasteFromClipboard()">Paste</button>
+        <button id="clear" title="Clears text" onClick="clearText()">Clear</button>
+    </div>
     
     <script src="wordCounter.js"></script>
 </body>
