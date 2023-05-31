@@ -4,11 +4,15 @@ let letterLabel = document.getElementById("letterLabel");
 let sentenceLabel = document.getElementById("sentenceLabel");
 
 let text, result;
-
+startCount()
 function startCount() {
     text = textBox.value;
     countWordsLettersSentences(text)
 }
+
+textBox.addEventListener("keydown", function() {
+  startCount()
+});
 
 function countWordsLettersSentences(text) {
     
@@ -30,4 +34,21 @@ function countWordsLettersSentences(text) {
       sentences: sentenceCount
     };
     
+}
+
+function pasteFromClipboard() {
+  text = textBox.value;
+  navigator.clipboard.readText()
+    .then(copyText => {
+    textBox.value = text + copyText;
+    })
+    .catch(err => {
+    console.error('Failed to read clipboard contents: ', err);
+    });
+}
+
+function clearText() {
+  text = textBox.value;
+  textBox.value = "";
+  startCount()
 }
