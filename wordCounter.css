@@ -6,18 +6,30 @@ body{
     cursor: default;
 }
 
-#button{
-    border: none;
+button{
     background-color: #C6A664;
     font-size: 50px;
     font-family:monospace;
     cursor: pointer;
+    border-radius: 30%;
+    border: 5px solid black;
+    padding: 15px;
+}
+
+button:hover{
+    background-color: #9e8450;
 }
 
 #textBox{
     background-color: #C6A664;
     font-size: 30px;
     font-family:monospace;
+    border: 5px solid black;
+    outline: none;
+}
+
+#textBox:focus {
+    outline: 2px solid red; /* replace "red" with the desired color or style */
 }
 
 #lables{
