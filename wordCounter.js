@@ -41,6 +41,7 @@ function pasteFromClipboard() {
   navigator.clipboard.readText()
     .then(copyText => {
     textBox.value = text + copyText;
+    startCount()
     })
     .catch(err => {
     console.error('Failed to read clipboard contents: ', err);
