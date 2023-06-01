@@ -26,10 +26,11 @@ button:hover{
     font-family:monospace;
     border: 5px solid black;
     outline: none;
+    resize: none;
 }
 
 #textBox:focus {
-    outline: 2px solid red;
+    outline: 2px solid rgb(255, 255, 255);
 }
 
 #lables{
